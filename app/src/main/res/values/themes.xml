@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.QuickPay" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pay_primary</item>
+        <item name="colorPrimaryDark">@color/pay_dark</item>
+        <item name="colorAccent">@color/pay_primary</item>
+        <item name="android:statusBarColor">@color/pay_dark</item>
+        <item name="android:navigationBarColor">@color/pay_bg</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">@color/pay_bg</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

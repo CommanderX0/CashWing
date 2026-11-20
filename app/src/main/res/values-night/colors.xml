@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFE8ECF5</color>
+    <color name="pay_primary">#8EA7FF</color>
+    <color name="pay_light">#252D42</color>
+    <color name="pay_dark">#C6D2FF</color>
+    <color name="pay_bg">#101522</color>
+    <color name="pay_gray">#AAB4C5</color>
+    <color name="pay_stroke">#38445B</color>
+    <color name="pay_money">#48C78E</color>
+</resources>

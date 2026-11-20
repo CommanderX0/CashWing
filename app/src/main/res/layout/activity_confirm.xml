@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pay_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp"
+        android:paddingBottom="32dp"
+        android:background="@drawable/bg_header">
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:background="@drawable/bg_circle_white"
+            android:contentDescription="Confirm"
+            android:padding="16dp"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Confirm transfer"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/bg_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/pay_gray"
+            android:text="Send to"
+            android:textColor="@color/pay_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Receiver"
+            android:textColor="@color/pay_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_money"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/pay_gray"
+            android:text="Amount"
+            android:textColor="@color/pay_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="0.00 EGP"
+            android:textColor="@color/pay_primary"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAfter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Balance after transfer:"
+            android:textColor="@color/pay_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editConfirmPin"
+        style="@style/PayInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="Enter your PIN to confirm"
+        android:inputType="numberPassword"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/PayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawableStart="@drawable/ic_check"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/PayButton.Outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:text="Cancel" />
+</LinearLayout>
